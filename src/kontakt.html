@@ -30,9 +30,10 @@
     <section>
         <h2>Skontaktuj się z nami</h2>
         <p>Masz pytania? Skontaktuj się z nami za pomocą formularza poniżej lub zadzwoń.</p>
-        <form id="formularz" action="#" method="post">
+        <form action="https://formspree.io/f/mblojeeg" method="POST">
             <label for="email">E-mail:</label>
             <input type="email" id="email" name="email" required placeholder="np. jan.kowalski@przyklad.com">
+
             <label for="subject">Temat wiadomości:</label>
             <select id="subject" name="subject" required>
                 <option value="">-- Wybierz temat --</option>
@@ -50,23 +51,13 @@
 
     <section>
         <h3>Nasze dane kontaktowe:</h3>
-        <p>Telefon: 123-456-789</p>
-        <p>E-mail: kontakt@elektryk.pl</p>
-        <p>Adres: ul. Elektryczna 10, 00-000 Miasto</p>
+        <p>Telefon: 722-166-544</p>
+        <p>E-mail: natalia.karvala@gmail.com</p>
     </section>
 </main>
 
 <footer>
     <p>&copy; 2025 Natalia Karwala</p>
 </footer>
-
-<script>
-document.getElementById("formularz").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("Dziękujemy za wiadomość! Skontaktujemy się z Tobą wkrótce.");
-    this.reset();
-});
-</script>
-
 </body>
 </html>
