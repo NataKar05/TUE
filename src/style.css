@@ -1,4 +1,4 @@
-/* 1. Marginesy*/
+/* 1. Marginesy */
 html, body {
     margin: 0;
     padding: 0;
@@ -38,39 +38,21 @@ li {
  ****************************************/
 header {
     background-color: #ffffff;
-    margin: 0;
-    padding: 0;
 }
 
 .header-images {
     display: flex;
-    flex-direction: row;
     align-items: center;
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
-.left-container {
-    flex: 2;
-    margin: 0;
-    padding: 0;
-}
-
-.right-container {
+.left-container, .right-container {
     flex: 1;
     margin: 0;
     padding: 0;
 }
 
-.logo-center {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0;
-}
-
-.logo-right {
+.logo-center, .logo-right {
     width: 100%;
     height: auto;
     display: block;
@@ -79,7 +61,6 @@ header {
 nav {
     background-color: #1E2F5B;
     text-align: center;
-    margin: 0;
     padding: 10px 0;
 }
 
@@ -140,16 +121,19 @@ footer {
 
 .gallery a {
     width: 100%;
-    display: block;
     height: 180px;
+    display: block;
 }
 
-.gallery a img {
+.gallery a img, .gallery video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
     border: 2px solid #75766D;
+}
+
+.gallery a img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -159,14 +143,7 @@ footer {
 }
 
 .gallery video {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 5px;
-    border: 2px solid #75766D;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    display: block;
-    align-self: start;
 }
 
 /****************************************
@@ -214,8 +191,134 @@ form input[type="submit"]:hover {
 }
 
 /****************************************
- * Odstępy między sekcjami
+ * Oferta
  ****************************************/
-main section {
-    margin-bottom: 50px;
+.oferta {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.kafelki {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.kafelek {
+    background: #ffffff;
+    padding: 25px 20px;
+    width: 260px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.kafelek:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    background-color: #fff6e5;
+}
+
+.kafelek h4 {
+    margin-bottom: 10px;
+    color: #1E2F5B;
+    font-size: 1.1rem;
+}
+
+.kafelek p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/****************************************
+ * Intro Section (zaktualizowane)
+ ****************************************/
+.intro-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 40px;
+  align-items: center; /* klucz do wyśrodkowania w pionie */
+}
+
+.intro-left {
+  flex: 2;
+  min-width: 280px;
+}
+
+.intro-left h2 {
+  color: #1E2F5B;
+  margin-bottom: 20px;
+}
+
+.intro-text-box {
+  background-color: #f9f9fc;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-text-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text-box p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.intro-right {
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.call-now {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #FF6600;
+  animation: pulseText 2s infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes pulseText {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.7; transform: scale(1.05); }
+}
+
+.phone-box {
+  background-color: #FF6600;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.icon {
+  height: 20px;
+  width: auto;
 }

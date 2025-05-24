@@ -14,10 +14,7 @@
     <header>
         <div class="header-images">
             <div class="left-container">
-                <img src="src/grafiki/jasne-logo.png" alt="Logo Twoje Usługi Elektryczne" class="logo-center">
-            </div>
-            <div class="right-container">
-                <img src="src/grafiki/elektryk.png" alt="Elektryk" class="logo-right">
+                <img src="src/grafiki/tło.png" alt="Logo Twoje Usługi Elektryczne" class="logo-center">
             </div>
         </div>
 
@@ -31,29 +28,51 @@
     </header>
 
     <main>
-        <section>
-            <h2>Witaj na naszej stronie</h2>
-            <p>Oferujemy kompleksowe usługi elektryczne dla domów i firm. Zapewniamy profesjonalną obsługę i gwarancję jakości.</p>
-            <p>TUE to firma pełna doświadczenia, a praca z prądem to nie tylko zawód, ale i pasja. Działamy z pełnym zaangażowaniem, zapewniając szybką reakcję na zgłoszenia, precyzyjną diagnostykę i solidne wykonanie usług.</p>
-            <p>Skontaktuj się z nami już dziś!</p>
-        </section>
-
-        <section style="display: flex; align-items: center; justify-content: space-between; gap: 30px; flex-wrap: wrap;">
-            <div style="flex: 1; text-align: center;">
-                <img src="src/grafiki/zawsze pod napięciem bez tła.png" alt="Zawsze pod napięciem" style="width: 100%; max-width: 400px;">
+        <section class="intro-section">
+            <div class="intro-left">
+                <div class="intro-text-box">
+                    <h2>USŁUGI ELEKTRYCZNE NOWY SĄCZ I OKOLICE</h2>
+                <p>Świadczymy kompleksowe usługi elektryczne dla domów i firm na terenie <strong>Nowego Sącza i okolic</strong>. Działamy na rynku od kilkunastu lat, co pozwoliło nam zdobyć bogate doświadczenie i zaufanie wielu klientów.</p>
+                <p>Nasza praca to nie tylko zawód – to pasja. Każde zlecenie traktujemy indywidualnie, zapewniając <strong>terminową realizację</strong>, <strong>szybką reakcję na zgłoszenia</strong>, <strong>precyzyjną diagnostykę</strong> i <strong>najwyższy poziom wykonania usług</strong>.</p>
+                <p>Zapraszamy do zapoznania się z naszą ofertą oraz do kontaktu – chętnie odpowiemy na wszystkie pytania i doradzimy najlepsze rozwiązania.</p>
+                </div>
             </div>
 
-            <div style="flex: 1; font-size: 1.05rem;">
-                <h3>W ofercie:</h3>
-                <ul style="list-style: none; padding-left: 0;">
-                    <li><strong>Instalacje</strong><br>elektryczne, teletechniczne, antenowe dla domów i firm</li>
-                    <li style="margin-top: 15px;"><strong>Naprawa</strong><br>i modernizacja instalacji</li>
-                    <li style="margin-top: 15px;"><strong>Montaż</strong><br>oświetlenia wewnętrznego i zewnętrznego oraz osprzętu elektrycznego</li>
-                    <li style="margin-top: 15px;"><strong>Podłączanie</strong><br>sprzętu AGD i RTV</li>
-                    <li style="margin-top: 15px;"><strong>Usuwanie</strong><br>awarii elektrycznych</li>
-                </ul>
+            <div class="intro-right">
+                <p class="call-now">Zadzwoń już dziś:</p>
+                <a href="tel:+48722166544" class="phone-box">
+                    <img src="src/grafiki/ikona-telefonu.png" alt="Telefon" class="icon">
+                    <strong>722–166–544</strong>
+                </a>
             </div>
         </section>
+
+        <section class="oferta">
+            <h3>OFERTA:</h3>
+            <div class="kafelki">
+                <div class="kafelek">
+                    <h4>Instalacje</h4>
+                    <p>elektryczne, teletechniczne, antenowe dla domów i firm</p>
+                </div>
+                <div class="kafelek">
+                    <h4>Naprawa i modernizacja</h4>
+                    <p>istniejących instalacji</p>
+                </div>
+                <div class="kafelek">
+                    <h4>Montaż oświetlenia</h4>
+                    <p>wewnętrznego i zewnętrznego oraz osprzętu</p>
+                </div>
+                <div class="kafelek">
+                    <h4>Podłączanie sprzętu</h4>
+                    <p>AGD i RTV</p>
+                </div>
+                <div class="kafelek">
+                    <h4>Usuwanie awarii</h4>
+                    <p>elektrycznych</p>
+                </div>
+            </div>
+        </section>
+
 
         <div style="text-align: center; margin: 40px 0;">
             <img src="src/grafiki/błyskawica bez tła.png" alt="Błyskawica" style="height: 100px;">
@@ -63,23 +82,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 Robert Karwala</p>
+        <p>&copy; 2025 TUE - Twoje Uslugi Elektryczne</p>
     </footer>
 
 </div>
-
-<script>
-function aktualizujZegar() {
-    const teraz = new Date();
-    const godziny = teraz.getHours().toString().padStart(2, '0');
-    const minuty = teraz.getMinutes().toString().padStart(2, '0');
-    const sekundy = teraz.getSeconds().toString().padStart(2, '0');
-    const czas = `${godziny}:${minuty}:${sekundy}`;
-    document.getElementById("zegar").textContent = "Aktualny czas: " + czas;
-}
-setInterval(aktualizujZegar, 1000);
-aktualizujZegar();
-</script>
 
 </body>
 </html>
